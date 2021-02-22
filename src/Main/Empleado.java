@@ -1,19 +1,21 @@
 package Main;
 
-public class Persona {
+public class Empleado {
 
     private String Id;
     private  String Nombre;
     private  String Apellido;
+    private String Salario;
 
 
-    public Persona(){}
+    public Empleado(){}
 
-    public Persona (String Id, String Nombre, String Apellido){
+    public Empleado (String Id, String Nombre, String Apellido){
 
         this.Id = Id;
         this.Nombre = Nombre;
         this.Apellido = Apellido;
+        this.Salario = Salario;
     }
     public String getId(){
         return this.Id;
@@ -36,5 +38,16 @@ public class Persona {
     public String getApellido(){
         return this.Apellido;
     }
+    
+    public String getSalario(){
+        return this.Salario;
+        
+    }
+    
+    public String setSalario( String Salario){
+        this.Salario = Salario;
+        return null;
+    }
+
 
 }
